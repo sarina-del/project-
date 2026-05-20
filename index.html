@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthGuard AI</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">TruthGuard <span>AI</span></div>
+        <nav>
+            <a href="#misinformation">Check Info</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#ethics">Ethics</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="badge">Ethical Technology & Misinformation Detection</p>
+            <h1>Detect misinformation and understand privacy policies before you trust or accept them.</h1>
+            <p class="hero-text">
+                TruthGuard AI is a student prototype that helps users make safer digital decisions by analysing online claims and simplifying complex privacy policies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#misinformation" class="btn primary">Check Information</a>
+                <a href="#privacy" class="btn secondary">Summarise Privacy Policy</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <h3>Why it matters</h3>
+            <ul>
+                <li>Fake news spreads quickly online.</li>
+                <li>Many users accept privacy policies without reading them.</li>
+                <li>AI can support safer and more responsible online behaviour.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section how-it-works">
+        <p class="section-label">Demo Flow</p>
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step-card">
+                <span>1</span>
+                <h3>Paste Content</h3>
+                <p>Add a claim, online post, article, or privacy policy.</p>
+            </div>
+            <div class="step-card">
+                <span>2</span>
+                <h3>AI Analyses</h3>
+                <p>The system checks patterns, keywords, risks, and warning signs.</p>
+            </div>
+            <div class="step-card">
+                <span>3</span>
+                <h3>Get Advice</h3>
+                <p>Receive a simple explanation, score, risks, and safety suggestions.</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="section tool-section" id="misinformation">
+            <div class="section-header">
+                <p class="section-label">Tool 1</p>
+                <h2>Misinformation Detection</h2>
+                <p>Paste a news article, social media post, or online claim below.</p>
+            </div>
+
+            <div class="tool-grid">
+                <div class="input-card">
+                    <label for="claimText">Online information / claim</label>
+                    <textarea id="claimText" placeholder="Example: URGENT!!! This secret cure was hidden by doctors. Share now before it is deleted..."></textarea>
+                    <button class="btn primary full" onclick="analyseInformation()">Analyse Information</button>
+                </div>
+
+                <div class="result-card" id="misinformationResult">
+                    <h3>Analysis Result</h3>
+                    <p class="empty-state">Your credibility score and warning signs will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tool-section" id="privacy">
+            <div class="section-header">
+                <p class="section-label">Tool 2</p>
+                <h2>Privacy Policy Summariser</h2>
+                <p>Paste a privacy policy and get a simplified explanation.</p>
+            </div>
+
+            <div class="tool-grid">
+                <div class="input-card">
+                    <label for="policyText">Privacy policy text</label>
+                    <textarea id="policyText" placeholder="Example: We collect your name, email, location data and device information. We may share data with third-party partners..."></textarea>
+                    <button class="btn primary full" onclick="summarisePolicy()">Summarise Policy</button>
+                </div>
+
+                <div class="result-card" id="privacyResult">
+                    <h3>Policy Summary</h3>
+                    <p class="empty-state">Your simplified privacy summary will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section ethics" id="ethics">
+            <p class="section-label">Responsible AI</p>
+            <h2>Ethical Use Statement</h2>
+            <div class="ethics-grid">
+                <div>
+                    <h3>Human judgement still matters</h3>
+                    <p>This tool supports awareness, but it does not replace human judgement or professional fact-checking.</p>
+                </div>
+                <div>
+                    <h3>Verification is important</h3>
+                    <p>Users should compare information with trusted sources before sharing it online.</p>
+                </div>
+                <div>
+                    <h3>Education, not censorship</h3>
+                    <p>The aim is to educate users and encourage safer digital decisions, not to censor opinions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>TruthGuard AI Prototype · Learn AI Competition</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
